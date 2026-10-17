@@ -1,7 +1,7 @@
-import { profile } from '../data/profile.js'
-import Icon from './Icon.jsx'
-import Monogram from './Monogram.jsx'
-import './Footer.css'
+import { profile } from "../data/profile.js";
+import Icon from "./Icon.jsx";
+import Monogram from "./Monogram.jsx";
+import "./Footer.css";
 
 export default function Footer() {
   return (
@@ -19,7 +19,11 @@ export default function Footer() {
 
         <ul className="footer-links">
           <li>
-            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               LinkedIn
               <span className="sr-only">(opens in a new tab)</span>
             </a>
@@ -44,11 +48,10 @@ export default function Footer() {
 
       <div className="container footer-bottom">
         <p>
-          © <span suppressHydrationWarning>{new Date().getFullYear()}</span> {profile.name}. All rights
-          reserved.
+          © <span suppressHydrationWarning>{new Date().getFullYear()}</span>{" "}
+          {profile.name}. All rights reserved.
         </p>
-        <p>Built with React &amp; Vite</p>
       </div>
     </footer>
-  )
+  );
 }
